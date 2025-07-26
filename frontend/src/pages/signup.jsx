@@ -26,7 +26,7 @@ function Signup() {
       return handleError("name, email and password are required");
     }
     try {
-      const url = "https://to-do-list-blond-nine-82.vercel.app//auth/signup";
+      const url = "https://to-do-list-blond-nine-82.vercel.app/auth/signup";
       const response = await fetch(url, {
         method: "POST",
         headers: {
