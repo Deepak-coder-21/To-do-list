@@ -25,7 +25,7 @@ function login() {
       return handleError("email and password are required");
     }
     try {
-      const url = "http://localhost:8080/auth/login";
+      const url = "https://to-do-list-blond-nine-82.vercel.app//auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {
