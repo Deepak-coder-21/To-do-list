@@ -83,7 +83,7 @@ function Home({ setIsAuthenticated }) {
           {todos.map((item, idx) => (
             <div
               key={idx}
-              className="flex justify-between items-center p-2 bg-violet-300 rounded-md my-2"
+              className="flex justify-between items-center p-2 bg-violet-300 rounded-md my-2 w-full"
             >
               <input
                 onChange={() => handleCheckbox(idx)}
