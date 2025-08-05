@@ -90,7 +90,13 @@ function Home({ setIsAuthenticated }) {
                 type="checkbox"
                 checked={item.isCompleted}
               />
-              <div className={item.isCompleted ? 'line-through' : ''}>{item.todo}</div>
+              <div
+                className={`${
+                  item.isCompleted ? 'line-through' : ''
+                    } break-words w-0 flex-1`}
+                    >
+                      {item.todo}
+               </div>
               <div className="flex gap-2">
                 <button
                   onClick={() => handleEdit(idx)}
