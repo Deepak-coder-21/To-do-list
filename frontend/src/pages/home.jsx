@@ -60,7 +60,7 @@ function Home({ setIsAuthenticated }) {
 
   return (
     <>
-      <div className="container mx-auto my-5 w-[85%] min-h-[80%] bg-violet-200 rounded-2xl">
+      <div className="container mx-auto my-5 w-[92%] min-h-[80%] bg-violet-200 rounded-2xl">
         <h1 className="text-3xl font-bold underline text-center p-4">Welcome {loggedInUser}</h1>
         <div className="flex justify-center items-center p-4">
           <input
