@@ -62,17 +62,17 @@ function Home({ setIsAuthenticated }) {
     <>
       <div className="container mx-auto my-5 w-[92%] min-h-[80%] bg-violet-200 rounded-2xl">
         <h1 className="text-3xl font-bold underline text-center p-4">Welcome {loggedInUser}</h1>
-        <div className="flex justify-center items-center p-4">
+        <div className="flex flex-wrap gap-2 justify-center items-center p-4 w-full">
           <input
             onChange={handleChange}
             value={todo}
             type="text"
             placeholder="Enter your task...."
-            className="bg-white px-2 py-1 rounded-sm"
+            className="bg-white px-2 py-1 rounded-smw-full sm:w-auto max-w-full min-w-0 flex-1 "
           />
           <button
             onClick={handleSave}
-            className="ml-2 bg-violet-800 hover:bg-violet-950 text-white font-bold rounded-sm px-2"
+            className=" bg-violet-800 hover:bg-violet-950 text-white font-bold rounded-sm px-2 w-full sm:w-auto"
           >
             {editIndex !== null ? 'Update' : 'Save'}
           </button>
